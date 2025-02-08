@@ -1,2 +1,8 @@
-# P.3
-set-1 . P.3 
+
+import random
+import string
+
+size = int(input("Enter the size of the password: "))
+allchar = string.ascii_letters + string.digits + string.punctuation
+password = ''.join(random.choice(allchar) for _ in range(size))
+print(password)
